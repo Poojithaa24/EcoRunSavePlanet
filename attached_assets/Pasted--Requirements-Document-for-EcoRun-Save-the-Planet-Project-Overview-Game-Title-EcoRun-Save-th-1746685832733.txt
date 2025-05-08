@@ -1,0 +1,64 @@
+🌍 Requirements Document for EcoRun: Save the Planet
+📝 Project Overview
+Game Title: EcoRun: Save the Planet
+Genre: Endless Runner / Environmental Strategy Hybrid
+Target Audience: Casual gamers, students, eco-conscious individuals (ages 8+)
+Platform: Web (preferred for hackathon), or Android/PC
+
+🎯 Objective
+Create a fun and educational endless runner game that raises awareness about environmental issues. Players collect trash, plant trees, and build eco-villages while avoiding pollutants and hazards. The goal is to survive, clean up as much as possible, and educate players through gameplay.
+
+🧩 Core Features
+Feature	Description
+Runner Mechanics	Classic side-scrolling or 3D endless running gameplay where the player dodges obstacles and collects items.
+Trash Collection	Players collect different types of trash (plastic, paper, metal) during the run.
+Eco-Upgrades	Collected items can be exchanged for eco-upgrades like tree planting, solar panels, recycling centers.
+Environmental Hazards	Avoid smoke, oil spills, and industrial zones that reduce eco-score or slow down the player.
+Eco-Meter	A progress bar showing how green the planet is based on the player’s performance.
+Real-world API Integration (Optional)	Use APIs (e.g., OpenWeatherMap, pollution data) to change levels dynamically based on the real environment.
+Leaderboard (Optional)	Tracks eco-scores to encourage competition and replayability.
+Educational Pop-ups	Quick facts or tips about sustainability shown when certain milestones are reached.
+
+🎮 Gameplay Flow
+Start Menu – Player starts the game and selects their avatar.
+
+Tutorial (optional) – Brief explanation of trash types and eco-points.
+
+Game Loop – Player runs, dodges obstacles, collects recyclables, and gains points.
+
+Upgrades Menu – Between runs, use points to build eco-projects.
+
+End Screen – Shows eco-score, achievements unlocked, and tips for real-world action.
+
+💻 Technical Requirements
+👨‍💻 Tech Stack
+Component	Technology
+Game Engine	Unity (C#), or Phaser.js if web-based
+UI	Unity UI, HTML/CSS (if browser)
+API Integration	REST APIs (for pollution data / weather)
+Animation & Assets	Sprite sheets, environmental icons, royalty-free sound effects
+Database (optional)	Firebase or LocalStorage for leaderboard/progress
+
+🎨 Art & Sound
+Asset Type	Examples
+Characters	Kids, animals, eco-heroes
+Environments	Forest, urban, ocean (switching levels)
+Sound Effects	Item collection, hazard alert, eco-milestone sounds
+Music	Upbeat eco-themed background track
+
+📊 Scoring System
+Action	Points
+Collect Trash	+5 to +20 (varies by type)
+Avoid Hazard	+10
+Plant Tree / Solar Panel	+50
+Hit Obstacle	-10
+Eco-Project Completed	+100
+
+🧪 Testing Plan
+Functional Testing – Ensure runner logic, collisions, upgrades work properly.
+
+Performance Testing – Smooth gameplay on different devices (browser/mobile).
+
+Usability Testing – Intuitive UI and progression system.
+
+Edge Cases – Restart logic, trash over-collection, API failure fallback.
