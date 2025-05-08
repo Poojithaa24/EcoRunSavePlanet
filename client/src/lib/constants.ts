@@ -63,9 +63,9 @@ export const GAME_CONFIG = {
   DESPAWN_DISTANCE: -10,
   
   // Difficulty progression
-  BASE_SCROLL_SPEED: 0.2,
+  BASE_SCROLL_SPEED: 0.4,
   SPEED_INCREASE_RATE: 0.0001,
-  MAX_SCROLL_SPEED: 0.8,
+  MAX_SCROLL_SPEED: 1.2,
   
   // Spawn rates (lower = more frequent)
   OBSTACLE_SPAWN_RATE: 1.5,

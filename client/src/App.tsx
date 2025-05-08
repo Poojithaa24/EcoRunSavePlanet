@@ -98,8 +98,8 @@ function App() {
               <Canvas
                 shadows
                 camera={{
-                  position: [0, 5, 10],
-                  fov: 60,
+                  position: [0, 3, 6],
+                  fov: 50,
                   near: 0.1,
                   far: 1000
                 }}
@@ -111,12 +111,16 @@ function App() {
                 <color attach="background" args={["#87CEEB"]} />
 
                 {/* Lighting */}
-                <ambientLight intensity={0.5} />
+                <ambientLight intensity={0.6} />
                 <directionalLight 
-                  position={[10, 10, 5]} 
-                  intensity={1} 
+                  position={[5, 8, -5]} 
+                  intensity={1.2} 
                   castShadow 
                   shadow-mapSize={[2048, 2048]} 
+                />
+                <hemisphereLight 
+                  args={["#87CEEB", "#8BC34A", 0.6]} 
+                  position={[0, 50, 0]} 
                 />
 
                 <Suspense fallback={null}>
